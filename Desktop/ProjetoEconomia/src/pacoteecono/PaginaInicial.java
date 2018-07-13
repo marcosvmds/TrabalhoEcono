@@ -30,6 +30,8 @@ public class PaginaInicial extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         btn_cambio = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        btn_lucro = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -42,8 +44,27 @@ public class PaginaInicial extends javax.swing.JFrame {
                 btn_cambioMouseClicked(evt);
             }
         });
+        btn_cambio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_cambioActionPerformed(evt);
+            }
+        });
 
         jLabel2.setText("Câmbio e Investimentos");
+
+        jLabel3.setText("Custo, Receita e Lucro");
+
+        btn_lucro.setText("Entrar");
+        btn_lucro.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_lucroMouseClicked(evt);
+            }
+        });
+        btn_lucro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_lucroActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -60,7 +81,13 @@ public class PaginaInicial extends javax.swing.JFrame {
                         .addComponent(jLabel2))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(35, 35, 35)
-                        .addComponent(btn_cambio)))
+                        .addComponent(btn_cambio))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel3))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(33, 33, 33)
+                        .addComponent(btn_lucro)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -72,7 +99,11 @@ public class PaginaInicial extends javax.swing.JFrame {
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btn_cambio)
-                .addContainerGap(195, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btn_lucro)
+                .addContainerGap(133, Short.MAX_VALUE))
         );
 
         pack();
@@ -84,6 +115,20 @@ public class PaginaInicial extends javax.swing.JFrame {
          frm_cambio.setVisible(true);
          this.dispose();
     }//GEN-LAST:event_btn_cambioMouseClicked
+
+    private void btn_cambioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_cambioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_cambioActionPerformed
+
+    private void btn_lucroMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_lucroMouseClicked
+         Frm_Lucro frm_Lucro = new Frm_Lucro();
+         frm_Lucro.setVisible(true);
+         this.dispose();
+    }//GEN-LAST:event_btn_lucroMouseClicked
+
+    private void btn_lucroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_lucroActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_lucroActionPerformed
 
     /**
      * @param args the command line arguments
@@ -122,7 +167,9 @@ public class PaginaInicial extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btn_cambio;
+    private javax.swing.JButton btn_lucro;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     // End of variables declaration//GEN-END:variables
 }
