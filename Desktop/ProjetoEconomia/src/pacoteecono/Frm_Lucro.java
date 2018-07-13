@@ -55,7 +55,12 @@ public class Frm_Lucro extends javax.swing.JFrame {
 
         jFormattedTextField4.setText("jFormattedTextField1");
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowClosed(java.awt.event.WindowEvent evt) {
+                formWindowClosed(evt);
+            }
+        });
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel1.setText("Lucro líquido mensal");
@@ -274,6 +279,11 @@ public class Frm_Lucro extends javax.swing.JFrame {
         // TODO add your handling code here:
         
     }//GEN-LAST:event_resMinimoActionPerformed
+
+    private void formWindowClosed(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosed
+        // TODO add your handling code here:
+        new PaginaInicial().setVisible(true);
+    }//GEN-LAST:event_formWindowClosed
 
     /**
      * @param args the command line arguments

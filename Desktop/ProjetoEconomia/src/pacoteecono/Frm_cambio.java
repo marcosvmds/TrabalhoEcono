@@ -35,7 +35,12 @@ public class Frm_cambio extends javax.swing.JFrame {
         btn_Saida_cambio = new javax.swing.JButton();
         lbl_cambio = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowClosed(java.awt.event.WindowEvent evt) {
+                formWindowClosed(evt);
+            }
+        });
 
         jLabel1.setText("Câmbio e Investimentos");
 
@@ -114,6 +119,11 @@ public class Frm_cambio extends javax.swing.JFrame {
     private void txt_ent_Cambio2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_ent_Cambio2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txt_ent_Cambio2ActionPerformed
+
+    private void formWindowClosed(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosed
+        // TODO add your handling code here:
+        new PaginaInicial().setVisible(true);
+    }//GEN-LAST:event_formWindowClosed
 
     /**
      * @param args the command line arguments
