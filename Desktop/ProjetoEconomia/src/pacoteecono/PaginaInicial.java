@@ -70,7 +70,7 @@ public class PaginaInicial extends javax.swing.JFrame {
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, -1, 21));
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel3.setText("Custo, Receita e Lucro");
+        jLabel3.setText("Ponto de Equilíbrio Econômico");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, -1, 20));
 
         btn_lucro.setText("Entrar");
