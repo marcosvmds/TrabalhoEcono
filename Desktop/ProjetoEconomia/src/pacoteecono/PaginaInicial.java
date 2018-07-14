@@ -192,16 +192,6 @@ public class PaginaInicial extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btn_cambioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_cambioMouseClicked
-         Frm_cambio frm_cambio = new Frm_cambio();
-         frm_cambio.setVisible(true);
-         this.dispose();
-    }//GEN-LAST:event_btn_cambioMouseClicked
-
-    private void btn_cambioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_cambioActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btn_cambioActionPerformed
-
     private void btn_lucroMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_lucroMouseClicked
          Frm_Lucro frm_Lucro = new Frm_Lucro();
          frm_Lucro.setVisible(true);
@@ -277,6 +267,16 @@ public class PaginaInicial extends javax.swing.JFrame {
     private void btn_pibActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_pibActionPerformed
                 // TODO add your handling code here:
     }//GEN-LAST:event_btn_pibActionPerformed
+
+    private void btn_cambioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_cambioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_cambioActionPerformed
+
+    private void btn_cambioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_cambioMouseClicked
+        Frm_cambio frm_cambio = new Frm_cambio();
+        frm_cambio.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btn_cambioMouseClicked
 
     /**
      * @param args the command line arguments
