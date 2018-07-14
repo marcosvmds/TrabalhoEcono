@@ -45,15 +45,8 @@ public class Frm_PIB extends javax.swing.JFrame {
         txt_saida_nominal_y = new javax.swing.JTextField();
         jLabel10 = new javax.swing.JLabel();
         txt_saida_real_x = new javax.swing.JTextField();
-        botao_x = new javax.swing.JRadioButton();
-        botao_y = new javax.swing.JRadioButton();
-        jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         txt_saida_real_y = new javax.swing.JTextField();
-        deflat = new javax.swing.JTextField();
-        jLabel13 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
-        tx_inflacao = new javax.swing.JTextField();
         jSeparator1 = new javax.swing.JSeparator();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -126,43 +119,11 @@ public class Frm_PIB extends javax.swing.JFrame {
             }
         });
 
-        botao_x.setText("X");
-        botao_x.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botao_xActionPerformed(evt);
-            }
-        });
-
-        botao_y.setText("Y");
-        botao_y.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botao_yActionPerformed(evt);
-            }
-        });
-
-        jLabel11.setText("Ano Base (PIB REAL)");
-
         jLabel12.setText("PIB Real (Y)");
 
         txt_saida_real_y.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txt_saida_real_yActionPerformed(evt);
-            }
-        });
-
-        deflat.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                deflatActionPerformed(evt);
-            }
-        });
-
-        jLabel13.setText("Deflator");
-
-        jLabel14.setText("Taxa de inflação");
-
-        tx_inflacao.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                tx_inflacaoActionPerformed(evt);
             }
         });
 
@@ -193,12 +154,6 @@ public class Frm_PIB extends javax.swing.JFrame {
                                             .addComponent(txt_ent_py, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                     .addComponent(jLabel6)
                                     .addGroup(layout.createSequentialGroup()
-                                        .addGap(2, 2, 2)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(botao_x)
-                                            .addComponent(botao_y)))
-                                    .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(layout.createSequentialGroup()
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(qx)
                                             .addComponent(px))
@@ -222,26 +177,15 @@ public class Frm_PIB extends javax.swing.JFrame {
                                 .addComponent(txt_saida_nominal_y, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(76, 76, 76)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(jLabel13)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(deflat, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(jLabel14)
-                                    .addGap(22, 22, 22)
-                                    .addComponent(tx_inflacao, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(1, 1, 1)
-                                        .addComponent(jLabel12))
-                                    .addComponent(jLabel10))
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(txt_saida_real_x, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(txt_saida_real_y, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addGap(41, 41, 41))))
+                                .addGap(1, 1, 1)
+                                .addComponent(jLabel12))
+                            .addComponent(jLabel10))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txt_saida_real_x, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txt_saida_real_y, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(70, 70, 70))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -284,24 +228,9 @@ public class Frm_PIB extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(qy)
                             .addComponent(txt_ent_qy, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(30, 30, 30)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabel13)
-                                    .addComponent(deflat, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(16, 16, 16))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(jLabel11)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel14)
-                            .addComponent(tx_inflacao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(botao_x))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(botao_y))
+                        .addGap(115, 115, 115))
                     .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 10, Short.MAX_VALUE)
                         .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 335, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
                 .addComponent(btn_saida_pib, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -314,19 +243,21 @@ public class Frm_PIB extends javax.swing.JFrame {
 
     private void btn_saida_pibActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_saida_pibActionPerformed
         
-        double px = Integer.parseInt(txt_ent_px.getText());
+        double px = Double.parseDouble(txt_ent_px.getText());
         double py = Double.parseDouble(txt_ent_py.getText());
         double qx = Double.parseDouble(txt_ent_qx.getText());
-        double qy = Double.parseDouble(txt_ent_py.getText());
+        double qy = Double.parseDouble(txt_ent_qy.getText());
         
         
-        double PIBN = px*qx;
-        double PIBR = px*qy;
+        double PIBNx = px*qx;
+        double PIBNy = py*qy;
+        double PIBRx = PIBNx;
+        double PIBRy = px*qy;
         
-       txt_saida_nominal_x.setText(Double.toString(PIBN));
-       txt_saida_real_x.setText(Double.toString(PIBR));
-               
-        
+       txt_saida_nominal_x.setText(Double.toString(PIBNx));
+       txt_saida_real_x.setText("0");
+       txt_saida_nominal_y.setText(Double.toString(PIBNy));
+       txt_saida_real_y.setText(Double.toString(PIBRy));
         
         
     }//GEN-LAST:event_btn_saida_pibActionPerformed
@@ -351,25 +282,9 @@ public class Frm_PIB extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txt_saida_real_xActionPerformed
 
-    private void botao_xActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botao_xActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_botao_xActionPerformed
-
-    private void botao_yActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botao_yActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_botao_yActionPerformed
-
     private void txt_saida_real_yActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_saida_real_yActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txt_saida_real_yActionPerformed
-
-    private void deflatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deflatActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_deflatActionPerformed
-
-    private void tx_inflacaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tx_inflacaoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_tx_inflacaoActionPerformed
 
     private void txt_ent_pxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_ent_pxActionPerformed
         // TODO add your handling code here:
@@ -418,16 +333,10 @@ public class Frm_PIB extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JRadioButton botao_x;
-    private javax.swing.JRadioButton botao_y;
     private javax.swing.JButton btn_saida_pib;
-    private javax.swing.JTextField deflat;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
@@ -437,7 +346,6 @@ public class Frm_PIB extends javax.swing.JFrame {
     private javax.swing.JLabel py;
     private javax.swing.JLabel qx;
     private javax.swing.JLabel qy;
-    private javax.swing.JTextField tx_inflacao;
     private javax.swing.JTextField txt_ent_px;
     private javax.swing.JTextField txt_ent_py;
     private javax.swing.JTextField txt_ent_qx;
