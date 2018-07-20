@@ -28,8 +28,6 @@ public class PaginaInicial extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
-        btn_cambio = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         btn_lucro = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
@@ -44,6 +42,10 @@ public class PaginaInicial extends javax.swing.JFrame {
         btn_ElastR = new javax.swing.JButton();
         jLabel10 = new javax.swing.JLabel();
         btn_pib = new javax.swing.JButton();
+        jLabel9 = new javax.swing.JLabel();
+        btn_keynes = new javax.swing.JButton();
+        jLabel11 = new javax.swing.JLabel();
+        btn_islm = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -52,26 +54,9 @@ public class PaginaInicial extends javax.swing.JFrame {
         jLabel1.setText("Software de Economia");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 484, 26));
 
-        btn_cambio.setText("Entrar");
-        btn_cambio.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btn_cambioMouseClicked(evt);
-            }
-        });
-        btn_cambio.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_cambioActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btn_cambio, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 80, -1, -1));
-
-        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel2.setText("Câmbio e Investimentos");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, -1, 21));
-
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel3.setText("Ponto de Equilíbrio Econômico");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, -1, 20));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, -1, 20));
 
         btn_lucro.setText("Entrar");
         btn_lucro.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -84,11 +69,11 @@ public class PaginaInicial extends javax.swing.JFrame {
                 btn_lucroActionPerformed(evt);
             }
         });
-        getContentPane().add(btn_lucro, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, -1, -1));
+        getContentPane().add(btn_lucro, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 80, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel4.setText("Demanda");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 240, 60, 21));
+        jLabel4.setText("Oferta X Demanda");
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 180, 120, 21));
 
         btn_demanda.setText("Entrar");
         btn_demanda.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -101,7 +86,7 @@ public class PaginaInicial extends javax.swing.JFrame {
                 btn_demandaActionPerformed(evt);
             }
         });
-        getContentPane().add(btn_demanda, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 260, -1, -1));
+        getContentPane().add(btn_demanda, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 200, -1, -1));
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel5.setText("Elasticidade");
@@ -173,7 +158,7 @@ public class PaginaInicial extends javax.swing.JFrame {
 
         jLabel10.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel10.setText("PIB");
-        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 180, -1, -1));
+        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 120, -1, -1));
 
         btn_pib.setText("Entrar");
         btn_pib.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -186,7 +171,41 @@ public class PaginaInicial extends javax.swing.JFrame {
                 btn_pibActionPerformed(evt);
             }
         });
-        getContentPane().add(btn_pib, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 200, -1, -1));
+        getContentPane().add(btn_pib, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, -1, -1));
+
+        jLabel9.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel9.setText("Modelo Keynesiano Simples");
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 230, 210, 40));
+
+        btn_keynes.setText("Entrar");
+        btn_keynes.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_keynesMouseClicked(evt);
+            }
+        });
+        btn_keynes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_keynesActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btn_keynes, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 270, -1, -1));
+
+        jLabel11.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel11.setText("IS-LM");
+        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 290, 70, 40));
+
+        btn_islm.setText("Entrar");
+        btn_islm.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_islmMouseClicked(evt);
+            }
+        });
+        btn_islm.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_islmActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btn_islm, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 330, -1, -1));
 
         pack();
         setLocationRelativeTo(null);
@@ -268,15 +287,23 @@ public class PaginaInicial extends javax.swing.JFrame {
                 // TODO add your handling code here:
     }//GEN-LAST:event_btn_pibActionPerformed
 
-    private void btn_cambioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_cambioActionPerformed
+    private void btn_keynesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_keynesMouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_btn_cambioActionPerformed
+    }//GEN-LAST:event_btn_keynesMouseClicked
 
-    private void btn_cambioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_cambioMouseClicked
-        Frm_cambio frm_cambio = new Frm_cambio();
-        frm_cambio.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_btn_cambioMouseClicked
+    private void btn_keynesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_keynesActionPerformed
+          Frm_modelo_keynes frm_is = new Frm_modelo_keynes();
+         frm_is.setVisible(true);
+         this.dispose();
+    }//GEN-LAST:event_btn_keynesActionPerformed
+
+    private void btn_islmMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_islmMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_islmMouseClicked
+
+    private void btn_islmActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_islmActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_islmActionPerformed
 
     /**
      * @param args the command line arguments
@@ -318,18 +345,20 @@ public class PaginaInicial extends javax.swing.JFrame {
     private javax.swing.JButton btn_ElastC;
     private javax.swing.JButton btn_ElastP;
     private javax.swing.JButton btn_ElastR;
-    private javax.swing.JButton btn_cambio;
     private javax.swing.JButton btn_demanda;
+    private javax.swing.JButton btn_islm;
+    private javax.swing.JButton btn_keynes;
     private javax.swing.JButton btn_lucro;
     private javax.swing.JButton btn_pib;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     // End of variables declaration//GEN-END:variables
 }
